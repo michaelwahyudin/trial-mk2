@@ -32,6 +32,32 @@ function showSlides() {
     });
   });
 
+    document.addEventListener("DOMContentLoaded", function () {
+      const productsLink = document.querySelector('a[href="#products"]');
+      
+      productsLink.addEventListener("click", function (event) {
+        event.preventDefault();
+        
+        const productsSection = document.getElementById("products");
+        
+        // Scroll to the products section smoothly
+        productsSection.scrollIntoView({ behavior: "smooth" });
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const aboutUsLink = document.querySelector('a[href="#aboutUs"]');
+      
+      aboutUsLink.addEventListener("click", function (event) {
+        event.preventDefault();
+        
+        const aboutUsSection = document.getElementById("aboutUs");
+        
+        // Scroll to the "About Us" section smoothly
+        aboutUsSection.scrollIntoView({ behavior: "smooth" });
+      });
+    }); 
+  
 
 /* burger section */
 const hamburgerMenu = document.querySelector(".hamburger-menu");
