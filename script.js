@@ -18,6 +18,21 @@ function showSlides() {
   setTimeout(showSlides, 6000); // Change image every 2 seconds
 }
 
+/* scroll section */
+  document.addEventListener("DOMContentLoaded", function () {
+    const contactLink = document.querySelector('a[href="#contact"]');
+    
+    contactLink.addEventListener("click", function (event) {
+      event.preventDefault();
+      
+      const contactSection = document.getElementById("contact");
+      
+      // Scroll to the contact section smoothly
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    });
+  });
+
+
 /* burger section */
 const hamburgerMenu = document.querySelector(".hamburger-menu");
 const hamburgerContent = document.querySelector(".hamburger-content");
