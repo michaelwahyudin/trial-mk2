@@ -219,6 +219,60 @@ body {
     margin-bottom: 10px;
     box-sizing: border-box;
 }
+
+
+/* Hamburger menu styles */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 6px 0;
+}
+
+/* Show the button on smaller screens using media queries */
+@media screen and (max-width: 600px) {
+  .hamburger-menu {
+    display: block;
+    z-index: 2;
+  }
+
+  .hamburger-content {
+    display: none;
+    background-color: #333;
+    padding: 10px;
+  }
+
+  .hamburger-content a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: 8px 0;
+  }
+
+  @media screen and (max-width: 600px) {
+    .hamburger-content {
+      display: block;
+    }
+  }}
+
+  /* Media query to hide the links when the hamburger menu is visible */
+  @media screen and (max-width: 600px) {
+    .nav-links a {
+      display: none;
+    }
+
+    .topnav .show a {
+      display: block;
+    }
+
+  }
+
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media (max-width: 800px) {
     .column {

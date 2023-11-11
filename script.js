@@ -18,3 +18,18 @@ function showSlides() {
   setTimeout(showSlides, 6000); // Change image every 2 seconds
 }
 
+/* burger section */
+const hamburgerMenu = document.querySelector(".hamburger-menu");
+const hamburgerContent = document.querySelector(".hamburger-content");
+
+let isOpen = false; // Variable to track the state of the hamburger menu
+
+hamburgerMenu.addEventListener("click", () => {
+  isOpen = !isOpen; // Toggle the state
+
+  if (isOpen) {
+    hamburgerContent.classList.add("show"); // Add the "show" class to display the content
+  } else {
+    hamburgerContent.classList.remove("show"); // Remove the "show" class to hide the content
+  }
+});
