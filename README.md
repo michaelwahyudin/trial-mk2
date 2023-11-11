@@ -16,6 +16,8 @@ _This is my pet_, visit my [Linkedin](https://www.linkedin.com/in/michael-wahyud
         5. semantic 
         6. use tag for img link etc 
 - [ ] Responsive Design
+        1. css media querries up to 375px
+        2. adaptive screen for both text and img 
 - [ ] Documentation
 - [ ] Deployment
 - [ ] http://mypixiv.online/ is online
