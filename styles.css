@@ -151,53 +151,32 @@ body {
     to {opacity: 1}
   }
   
-  .contact h3 {
-    color: #000000;
-    text-shadow: #ff0000;
-}
 
   .contact {
     padding: 50px;
     background-color: #eee;
     text-align: center;
-    
   }
   
   form {
     max-width: 600px;
     margin: 0 auto;
-}
-
-label {
-    display: block;
-    margin-bottom: 10px;
-    color: #000000;
-}
-  input,
-  textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 20px;
-      box-sizing: border-box;
-      border: 1px solid #666;
-      border-radius: 5px;
   }
-
+  
+  label, input, textarea {
+    display: block;
+    margin-bottom: 20px;
+  }
+  
   button {
-    background-color: #ffcc00;
-    color: #333;
-    padding: 12px 20px;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
+  }
 
-button:hover {
-    background-color: #fff;
-    color: #333;
-}
   
   * {
     box-sizing: border-box;
