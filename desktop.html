@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Spice Up Your Creating Process - Pixiv inspired web</title>
+    <meta name="description" content="Spice up your creative process with our community.">
+  </head>
+  <body>
+    <div class="background">
+      <header>
+        <div class="topnav">
+          <!-- remove dis after class -->
+          <picture>
+            <source media="(min-width:800px)" srcset="./asset/guda.gif" />
+            <source media="(min-width:600px)" srcset="./asset/guin.gif" />
+            <img src="./asset/fgo.gif" alt="guda fgo changing background" style="width: auto" />
+          </picture>
+          <!-- Hamburger Button -->
+          <div class="hamburger-menu" id="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="hamburger-content">
+              <a id="home-link" class="active" href="mobile.html">Mobile</a>
+              <a
+                id="about-link"
+                href="https://github.com/revou-fsse-3/module-2-michaelwahyudin"
+                >About</a
+              >
+              <a href="https://www.pixiv.net/en/">Inspired by</a>
+              <input type="text" placeholder="Search.." />     
+            </div>
+          </div>
+
+          <a href="mobile.html">Mobile</a>
+          <a href="https://github.com/revou-fsse-3/module-2-michaelwahyudin"
+            >About</a
+          >
+          <a href="https://www.pixiv.net/en/">Inspired by</a>
+          <h1>Spice up your creating process</h1>
+          <input type="text" placeholder="Search.." />
+        </div>
+      </header>
+      <main>
+        <!-- ass grid rmove after -->
+        <div class="grid-container">
+          <img src="./asset/11.png" alt="logo pixiv" class="img-with-padding" />
+          <img src="./asset/pixi.png" alt="night mode image" class="nightlogo"/>
+          <label class="asymmetrical-cell">Red</label>
+          <label for="night-mode-switch" class="contained-cell">
+            <span>Night Mode:</span>
+            <label class="switch">
+              <input type="checkbox" id="night-mode-switch" />
+              <span class="slider"></span>
+            </label>
+          </label>
+        </div>
+
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="./asset/1.jpg" alt="castle" style="width: 100%" />
+          </div>
+          <div class="mySlides fade">
+            <img src="./asset/2.jpg" alt="girl in water" style="width: 100%" />
+          </div>
+          <div class="mySlides fade">
+            <img src="./asset/3.jpg" alt="girl beside lake" style="width: 100%" />
+          </div>
+          <div class="mySlides fade">
+            <img src="./asset/4.jpg" alt="hacker girl on pc" style="width: 100%" />
+          </div>
+          <div class="mySlides fade">
+            <img src="./asset/5.jpg" alt="serene view of forest and city" style="width: 100%" />
+          </div>
+        </div>
+        <section>
+          <div class="white-box">
+            <div class="centered-form">
+              <form id="login-form">
+                <label for="username">Enter ID:</label>
+                <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  placeholder="Username"
+                  required
+                />
+                <label for="password">Password:</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Password"
+                  required
+                  minlength="8"
+                  pattern=".{8,'Password must be at least 8 characters long'}"
+                />
+                <!-- Checkboxes -->
+                <label for="checkbox1"
+                  >I have read and agree to the terms of
+                  <a href="https://policies.google.com/terms?hl=en-US"
+                    >service</a
+                  >.</label
+                >
+                <input
+                  type="checkbox"
+                  id="checkbox1"
+                  name="option1"
+                  value="option1"
+                />
+
+                <!-- Text area -->
+                <label for="comments">Comments:</label>
+                <textarea
+                  id="comments"
+                  name="comments"
+                  rows="4"
+                  cols="50"
+                  placeholder="Write your comments here..."
+                  required
+                ></textarea>
+                <!-- New for class remove later maybe -->
+                <span id="survey">User Satisfaction survey</span>
+                <div class="range-slider-container">
+                  <input
+                    type="range"
+                    id="myRange"
+                    name="myRange"
+                    min="0"
+                    max="100"
+                    step="1"
+                    required
+                  />
+                  <span class="range-value">0</span>
+                </div>
+                <fieldset>
+                  <legend>User Type:</legend>
+                  <div class="radio-group">
+                    <input
+                      type="radio"
+                      id="user1"
+                      name="User Type"
+                      value="user1"
+                    />
+                    <label for="user1">User</label>
+                  </div>
+
+                  <div class="radio-group">
+                    <input
+                      type="radio"
+                      id="creator"
+                      name="User Type"
+                      value="creator"
+                    />
+                    <label for="creator">Creator</label>
+                  </div>
+                </fieldset>
+                <button class="btn">Register</button>
+                <button class="btn">Login</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
